@@ -1,6 +1,8 @@
 import { container, Questions } from "./variables.js"
 
 const renderInterviewQuestions = () => {
+  const div = document.createElement("div")
+  div.classList.add("grid")
   Questions.forEach(question => {
     const questionElement = document.createElement("div")
     
@@ -9,9 +11,10 @@ const renderInterviewQuestions = () => {
       <h2>${question.title}</h2>
       <p class='question-text'>${question.answer}</p>
     `
-    
-    container.appendChild(questionElement)
+    div.appendChild(questionElement)
+    container.appendChild(div)
   })
+
 }
 
 renderInterviewQuestions()
