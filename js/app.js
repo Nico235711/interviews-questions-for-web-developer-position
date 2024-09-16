@@ -1,20 +1,49 @@
-import { container, Questions } from "./variables.js"
+import { cssQuestions, htmlQuestions, interviewQuestions, jsQuestions } from "./variables.js";
 
-const renderInterviewQuestions = () => {
-  const div = document.createElement("div")
-  div.classList.add("grid")
-  Questions.forEach(question => {
-    const questionElement = document.createElement("div")
-    
-    questionElement.classList.add("question")
-    questionElement.innerHTML = `
-      <h2>${question.title}</h2>
-      <p class='question-text'>${question.answer}</p>
-    `
-    div.appendChild(questionElement)
-    container.appendChild(div)
+const renderHTMLInterviewQuestions = () => {
+  interviewQuestions.html.forEach(question => {
+    const htmlQuestionElement = document.createElement("div")
+    htmlQuestionElement.classList.add("htmlQuestion")
+
+    htmlQuestionElement.innerHTML =
+      `<h3>${question.title}</h3>
+      <p>${question.answer}</p>`
+
+    htmlQuestions.append(htmlQuestionElement)
   })
 
-}
+};
 
-renderInterviewQuestions()
+renderHTMLInterviewQuestions();
+
+const renderCSSInterviewQuestions = () => {
+  interviewQuestions.css.forEach(question => {
+    const cssQuestionElement = document.createElement("div")
+    cssQuestionElement.classList.add("cssQuestion")
+
+    cssQuestionElement.innerHTML =
+      `<h3>${question.title}</h3>
+      <p>${question.answer}</p>`
+
+    cssQuestions.append(cssQuestionElement)
+  })
+
+};
+
+renderCSSInterviewQuestions();
+
+const renderJSInterviewQuestions = () => {
+  interviewQuestions.javascript.forEach(question => {
+    const jsQuestionElement = document.createElement("div")
+    jsQuestionElement.classList.add("jsQuestion")
+
+    jsQuestionElement.innerHTML =
+      `<h3>${question.title}</h3>
+      <p>${question.answer}</p>`
+
+    jsQuestions.append(jsQuestionElement)
+  })
+
+};
+
+renderJSInterviewQuestions();
