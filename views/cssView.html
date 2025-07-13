@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas de HTML</title>
+    <link rel="stylesheet" href="../css/html.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Preguntas de CSS</h1>
+    <a href="/">
+      <button type="button" class="comeback-btn">&lArr; Volver</button>
+    </a>
+
+    <div class="question">
+      <h3>¿Qué diferencia hay entre un <code>id</code> y una clase en CSS?</h3>
+      <p>
+        El <code>id</code> tiene mayor especificidad (importancia) que la
+        <code>class</code>, lo que significa que si hay conflictos en las reglas
+        CSS, el estilo aplicado al <code>id</code> prevalecerá sobre el de la
+        <code>class</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo seleccionar un <code>id</code> y una clase dentro de CSS?</h3>
+      <p>
+        El <code>id</code> se selecciona con el <code>#</code> (hashtag) seguido
+        del nombre del <code>id</code>, mientras que la <code>class</code> se
+        selecciona con el <code>.</code> (punto) seguido del nombre de la
+        <code>class</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Con qué propiedades CSS puedo cambiar el color y el estilo de la
+        fuente?
+      </h3>
+      <p>
+        Con <code>color</code> cambias el color del texto y
+        <code>font-style</code> puedes cambiar el estilo de la fuente (por
+        ejemplo, cursiva o normal).
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo puedo cambiar el fondo de una web?</h3>
+      <p>
+        Con la propiedad <code>background-color</code> para cambiar el color de
+        fondo, o <code>background-image</code> para agregar una imagen de fondo.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo puedo dejar fijo un menú en una página web usando CSS?</h3>
+      <p>
+        Puedes usar la propiedad <code>position: fixed;</code> en el menú para
+        que permanezca en una posición fija mientras se desplaza la página.
+        Además, puedes usar <code>top</code>, <code>bottom</code>,
+        <code>left</code>, o <code>right</code> para especificar la ubicación
+        exacta del menú en la pantalla. Ejemplo:
+        <code>position: fixed; top: 0; left: 0;</code> para fijar el menú en la
+        parte superior izquierda de la página.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cuáles son las distintas formas de posicionar elementos en CSS?</h3>
+      <p>
+        Las formas de posicionar elementos en CSS incluyen <code>static</code>,
+        <code>relative</code>, <code>absolute</code>, <code>fixed</code> y
+        <code>sticky</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Con qué propiedad CSS puedo poner sombras tanto a textos como a cajas?
+      </h3>
+      <p>
+        Con la propiedad <code>box-shadow</code> para cajas y
+        <code>text-shadow</code> para textos.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo puedo poner un borde redondeado a una caja en CSS?</h3>
+      <p>
+        Con la propiedad <code>border-radius</code>, puedes especificar el radio
+        de los bordes redondeados.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cómo puedo adaptar una página web para que sea responsive usando CSS?
+      </h3>
+      <p>
+        Puedes usar consultas de medios (media queries) con la regla
+        <code>@media</code> para aplicar diferentes estilos según el tamaño de
+        la pantalla. También puedes usar unidades relativas como
+        <code>em</code>, <code>rem</code>, y <code>%</code> en lugar de unidades
+        fijas como <code>px</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cómo hacer que el contenido que sobresale de una caja no se vea en CSS?
+      </h3>
+      <p>
+        Con la propiedad <code>overflow</code> puedes ocultar el contenido que
+        sobresale de una caja. Los valores comunes son <code>hidden</code>,
+        <code>scroll</code> y <code>auto</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Qué diferencia hay entre <code>flexbox</code> y
+        <code>CSS Grid Layout</code>?
+      </h3>
+      <p>
+        <code>flexbox</code> se usa para diseñar elementos en una sola dimensión
+        (fila o columna), mientras que <code>CSS Grid Layout</code> se usa para
+        diseñar elementos en dos dimensiones (filas y columnas).
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cuál es la diferencia entre un preprocesador de CSS y un framework para
+        CSS?
+      </h3>
+      <p>
+        Un preprocesador de CSS como Sass o LESS extiende las capacidades de CSS
+        con variables, funciones y otras características avanzadas, mientras que
+        un framework de CSS como Bootstrap o Foundation proporciona un conjunto
+        de estilos y componentes prediseñados listos para usar.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Qué propiedades usarías para hacer efectos y animaciones en CSS?</h3>
+      <p>
+        Para efectos y animaciones, usarías <code>transition</code> para
+        transiciones suaves entre estados, y <code>animation</code> junto con
+        <code>@keyframes</code> para animaciones complejas.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo harías un efecto 3D en un elemento usando CSS?</h3>
+      <p>
+        Para un efecto 3D, puedes usar propiedades como
+        <code>transform: perspective()</code> para establecer una perspectiva y
+        <code>transform: rotateX()</code>, <code>rotateY()</code>, y
+        <code>rotateZ()</code> para rotaciones en 3D.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo manejar las capas y darles prioridad usando CSS?</h3>
+      <p>
+        Para manejar las capas y darles prioridad, usa la propiedad
+        <code>z-index</code> en combinación con <code>position</code> (debe ser
+        <code>relative</code>, <code>absolute</code>, o <code>fixed</code>) para
+        controlar el apilamiento de elementos.
+      </p>
+    </div>
+  </body>
+</html>

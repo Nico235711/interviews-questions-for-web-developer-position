@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas de HTML</title>
+    <link rel="stylesheet" href="../css/html.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Preguntas de JavaScript</h1>
+    <a href="/">
+      <button type="button" class="comeback-btn">&lArr; Volver</button>
+    </a>
+
+    <div class="question">
+      <h3>¿Con qué función puedo mostrar una alerta en JavaScript?</h3>
+      <p>Con la función <code>alert()</code>.</p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Con qué función puedo pasar datos o mostrar algo en la consola del
+        navegador?
+      </h3>
+      <p>Con la función <code>console.log()</code>.</p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cuál es la diferencia entre <code>let</code>, <code>var</code> y
+        <code>const</code>?
+      </h3>
+      <p>
+        <code>var</code> tiene un alcance de función y puede ser redeclarado,
+        <code>let</code> tiene un alcance de bloque y no puede ser redeclarado
+        en el mismo bloque, y <code>const</code> también tiene un alcance de
+        bloque pero el valor no puede ser reasignado después de su
+        inicialización.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cómo detectar el tipo de dato que tiene una variable en JavaScript?
+      </h3>
+      <p>Usando el operador <code>typeof</code>.</p>
+    </div>
+    <div class="question">
+      <h3>¿Cuáles son las estructuras de control más comunes en JavaScript?</h3>
+      <p>
+        Las estructuras de control comunes son <code>if</code>,
+        <code>else</code>, <code>switch</code>, <code>for</code>,
+        <code>while</code> y <code>do...while</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Qué es un template string?</h3>
+      <p>
+        Un template string es una forma de incluir variables y expresiones
+        dentro de cadenas de texto, utilizando las comillas invertidas
+        (<code>`</code>) y la sintaxis <code>${expresión}</code> para interpolar
+        valores.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Qué es una función de callback?</h3>
+      <p>
+        Una función de callback es una función que se pasa como argumento a otra
+        función y se ejecuta después de que se completa una operación o se
+        cumple una condición.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Qué es un array multidimensional?</h3>
+      <p>
+        Un array multidimensional es un array que contiene otros arrays como sus
+        elementos, permitiendo representar datos en más de una dimensión (por
+        ejemplo, una matriz).
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cuál es la diferencia entre <code>forEach</code>, <code>for in</code> y
+        <code>for of</code>?
+      </h3>
+      <p>
+        <code>forEach</code> itera sobre los elementos de un array,
+        <code>for in</code> itera sobre las propiedades enumerables de un
+        objeto, y <code>for of</code> itera sobre los valores de una colección
+        iterable (como arrays, cadenas de texto, etc.).
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cómo contar el número de elementos dentro de un array en JavaScript?
+      </h3>
+      <p>Usando la propiedad <code>length</code> del array.</p>
+    </div>
+    <div class="question">
+      <h3>¿Cuál es la diferencia entre el DOM y el BOM en JavaScript?</h3>
+      <p>
+        El DOM (Document Object Model) representa la estructura del documento
+        HTML o XML como un árbol de nodos, mientras que el BOM (Browser Object
+        Model) proporciona acceso a las funcionalidades del navegador, como el
+        historial y la ventana.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Qué métodos de JavaScript hay para seleccionar elementos del DOM?
+      </h3>
+      <p>
+        Los métodos comunes para seleccionar elementos del DOM son
+        <code>getElementById()</code>, <code>getElementsByClassName()</code>,
+        <code>getElementsByTagName()</code>, <code>querySelector()</code>, y
+        <code>querySelectorAll()</code>.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cuál es la diferencia entre los eventos <code>blur</code> y
+        <code>focus</code>?
+      </h3>
+      <p>
+        El evento <code>focus</code> se activa cuando un elemento recibe el
+        foco, mientras que el evento <code>blur</code> se activa cuando un
+        elemento pierde el foco.
+      </p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Cuáles son las diferentes formas de manejar eventos en JavaScript?
+      </h3>
+      <p>
+        Las formas de manejar eventos incluyen el uso de atributos HTML como
+        <code>onclick</code>, métodos de eventos como
+        <code>addEventListener()</code>, y el manejo de eventos en línea con
+        funciones en el propio HTML.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo guardar un objeto JSON en el localStorage?</h3>
+      <p>
+        Utilizando
+        <code>localStorage.setItem('clave', JSON.stringify(objeto));</code> para
+        guardar el objeto como una cadena JSON.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Cómo hacer una petición a una ruta de un API en JavaScript?</h3>
+      <p>
+        Puedes usar el método <code>fetch()</code> para hacer peticiones a una
+        API. Ejemplo:
+        <code
+          >fetch('ruta/api').then(response => response.json()).then(data =>
+          console.log(data));</code
+        >.
+      </p>
+    </div>
+    <div class="question">
+      <h3>¿Con qué objeto se manejan las fechas en JavaScript?</h3>
+      <p>Con el objeto <code>Date</code>.</p>
+    </div>
+    <div class="question">
+      <h3>¿Qué es una promesa en JavaScript?</h3>
+      <p>
+        Una promesa es un objeto que representa la eventual finalización (o
+        fallo) de una operación asíncrona y su valor resultante.
+      </p>
+    </div>
+    <div class="question">
+      <h3>Menciona dos frameworks de JavaScript.</h3>
+      <p>Dos frameworks de JavaScript son React y Angular.</p>
+    </div>
+    <div class="question">
+      <h3>
+        ¿Se puede hacer backend con JavaScript? ¿Con qué lo harías si es
+        posible?
+      </h3>
+      <p>
+        Sí, se puede hacer backend con JavaScript usando Node.js. Puedes
+        utilizar frameworks como Express para facilitar el desarrollo del
+        servidor.
+      </p>
+    </div>
+  </body>
+</html>
